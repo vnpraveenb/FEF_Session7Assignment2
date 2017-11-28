@@ -5,15 +5,15 @@ function helpNote(element){
     //This function is a closure which changes the content of helpELement tag's innerHTML if id of the clicked element matches a given string
  function changeText(){
          
-        if( helpId == "username")
+        if( helpId === "username")
         {
             document.getElementById("helpElement").innerHTML = "Please input the username";
         }
-        else if( helpId == "age")
+        else if( helpId === "age")
         {
             document.getElementById("helpElement").innerHTML = "Please input the age";
         } 
-        else if( helpId == "city")
+        else if( helpId === "city")
         {
             document.getElementById("helpElement").innerHTML = "Please input the city";
         }         
