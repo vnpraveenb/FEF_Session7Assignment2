@@ -1,0 +1,34 @@
+    <!DOCTYPE html>
+    <!-- Write a helper Note by creating a form with field as name, age, city. Use a closure concept which on by click to text field it should display the helpful note for as follows: 1. name as “Please input the username” 2. Age as “Please input the age” 3. City as “Please input the city".-->
+    <html lang="en">
+    <head>
+        <title> Helper Note for forms</title> <!-- Title of the page -->
+    </head>
+    <body>
+            <h2> Helper Note for forms </h2> <!-- Heading for the page -->
+            <hr>
+            <br>
+            <form>
+                 <!-- Helper Text  will replace the content of the tag here -->
+                <p id="helpElement">Helpful notes will appear here</p> 
+
+                <label> Name:   </label>
+                <!-- Input Text field to input username -->
+                <input  id ="username" type ="text"  name ="username" size="30" onclick = "helpNote(this)">
+                 <br> <br>
+
+                <label> Age:    </label> 
+                <!-- Input Text field to input age -->
+                <input  id ="age" type ="text"  name ="age" size="10"   onclick = "helpNote(this)"> <br> <br>
+
+                
+                <label> City:   </label>
+                <!-- Input Text field to input city -->
+                <input id ="city" type ="text"  name ="city" size="30"   onclick = "helpNote(this)"> <br> <br>     
+            </form>
+            
+            <!-- The code is written in an external javascript file -->
+        <script src= "help.js"> </script>  
+            
+    </body>
+    </html>
